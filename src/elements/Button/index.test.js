@@ -1,7 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import Button from "./index";
 
 test("Should not allowed click button is isDisabled is present", () => {
@@ -31,4 +30,4 @@ test("Should render <Link> component", () => {
   );
 
   expect(container.querySelector("a")).toBeInTheDocument();
-}); 
+});
