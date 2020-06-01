@@ -49,7 +49,7 @@ export default function Footer() {
                                 <Button isExternal type="link" href="mailto:support@geligeli.com"> support@geligeli.com </Button>
                             </li>
                             <li className="list-group-item">
-                                <Button isExternal type="link" href="tel:+622120051997"> (+62) 021-2005-1997 </Button>
+                                <Button isExternal type="link" href="tel:+622120051997"> (+62) 021 - 2005 -  1997 </Button>
                             </li>
                             <li className="list-group-item">
                                 <span> GeliGeli - Bintara, Bekasi, ID</span>
