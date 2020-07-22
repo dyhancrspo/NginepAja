@@ -3,16 +3,18 @@ import propTypes from "prop-types";
 import Button from "elements/Button";
 import "./index.scss";
 
+
+
 export default function Breadcrumb(props) {
   const className = ["breadcrumb", props.className];
   return (
-    <nav arial-label="breadcrumb">
+    <nav aria-label="breadcrumb">
       <ol className={className.join(" ")}>
         {props.data.map((item, index) => {
           return (
             <li
               key={`breadcrumb-${index}`}
-              className={`breadcrumb-item ${
+              className={`breadcrumb-item${
                 index === props.data.length - 1 ? " active" : ""
               }`}
             >
@@ -33,5 +35,5 @@ export default function Breadcrumb(props) {
 
 Breadcrumb.propTypes = {
   data: propTypes.array,
-  className: propTypes.string,
+  className: propTypes.string
 };
