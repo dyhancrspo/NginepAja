@@ -1,15 +1,33 @@
 import React from "react";
-import Fade from 'react-reveal/Fade';
-import Roll from 'react-reveal/Roll';
 
-
+// Import Component
 import Button from "elements/Button";
 import BrandIcon from "parts/IconText";
+
+//Import Effect from React Reveal
+import Fade from 'react-reveal/Fade';
+import Roll from 'react-reveal/Roll';
 
 export default function Header(props) {
   const getNavLinkClass = (path) => {
     return props.location.pathname === path ? " active" : "";
   };
+
+  if( props.isCentered)
+  return (
+    <Fade>
+      <header className="spacing-sm">
+        <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-light">
+            <Button className="brand-text-icon mx-auto" href="" type="link">
+              Geli<span className="text-gray-900">geli.</span>
+            </Button>
+          </nav>
+        </div>
+      </header>
+    </Fade>
+  )
+
   return (
     <Fade top>
     <header className="spacing-sm">
