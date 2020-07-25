@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 
-
 export default function Button(props) {
   const className = [props.className];
   if (props.isPrimary) className.push("btn-primary");
+  if (props.isLight) className.push("btn-light");
   if (props.isLarge) className.push("btn-lg");
   if (props.isSmall) className.push("btn-sm");
   if (props.isBlock) className.push("btn-block");
@@ -31,7 +31,7 @@ export default function Button(props) {
     );
   }
 
-  if ((props.type === "link")) {
+  if (props.type === "link") {
     if (props.isExternal) {
       return (
         <a
@@ -57,6 +57,7 @@ export default function Button(props) {
       );
     }
   }
+
   return (
     <button
       className={className.join(" ")}
@@ -74,12 +75,13 @@ Button.propTypes = {
   href: propTypes.string,
   target: propTypes.string,
   className: propTypes.string,
+  isPrimary: propTypes.bool,
+  isLight: propTypes.bool,
   isExternal: propTypes.bool,
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
-  isPrimary: propTypes.bool,
   hasShadow: propTypes.bool,
 };

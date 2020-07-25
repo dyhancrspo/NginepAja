@@ -6,8 +6,8 @@ import Button from 'elements/Button'
 
 export default function MostPicked(props) {
     return (
-        <Fade bottom>
         <section className="container" ref={props.refMostPicked} >
+            <Fade bottom>
             <h4 className="mb-3">Most Picked</h4>
             <div className="container-grid">
                 { props.data.map((item, index) => {
@@ -38,7 +38,7 @@ export default function MostPicked(props) {
                    )
                } ) }
             </div>  
-        </section>
         </Fade>
+        </section>
     )
 }

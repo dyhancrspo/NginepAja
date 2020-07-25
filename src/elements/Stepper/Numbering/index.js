@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 
 import "./index.scss"
 
-export default function Meta({style, className, data, current}) {
+export default function Numbering({style, className, data, current}) {
 
-        const KeysOfDta = object.keys(data)
+        const KeysOfDta = Object.keys(data)
 
         return (
                 <Fade delay={300}>
@@ -30,7 +30,7 @@ export default function Meta({style, className, data, current}) {
              )
 }
 
-Numbering.PropTypes = {
+Numbering.propTypes = {
         className: PropTypes.string,
         data: PropTypes.object,
         current: PropTypes.string

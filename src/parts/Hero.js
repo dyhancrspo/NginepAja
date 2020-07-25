@@ -14,12 +14,12 @@ import formatNumber from 'utils/formatNumber'
 export default function Hero(props) {
 
 //  Function button menampilkan most picked
-    function showMostPicked() {
-        window.scrollTo({
-            top: props.refMostPicked.current.offsetTop - 30,
-            behavior: 'smooth'
-        })
-    }
+function showMostPicked() {
+  window.scrollTo({
+      top: props.refMostPicked.current.offsetTop - 30,
+      behavior: 'smooth'
+  })
+}
 
 
     return (
@@ -96,11 +96,13 @@ export default function Hero(props) {
                 <img
                   src={ImageHero}
                   className="img-fluid position-absolute"
+                  alt="Hero Img"
                   style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
                 />
                 <img
                   src={ImageFrame}
                   className="img-fluid position-absolute"
+                  alt="hero frame"
                   style={{ margin: "0 -15px -15px 0" }}
                 />
               </div>
