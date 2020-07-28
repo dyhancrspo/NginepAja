@@ -7,6 +7,7 @@ import DetailsPage from "pages/DetailsPage";
 import Checkout from "pages/Checkout";
 import Example from "pages/Example"
 
+//App
 function App() {
   return (
     <div className="App">
