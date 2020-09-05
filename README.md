@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-`EN` - Geligeli is Hotel Booking Web code with ReactJS and Bootsrap
-`ID` - Geligeli adalah sebuah Web pemesanan hotel, yang dibuat menggunakan ReactJS dan Bootstrapp untuk tampilan User nya. Sedangkan untuk tampilan admin/server dibuat menggunakan NodeJS dan ExpressJS
-`Backend/Server repo : https://github.com/dyhancrspo/backend_NginepAja`
+EN - Geligeli is Hotel Booking Web code with ReactJS and Bootsrap<br/>
+ID - Geligeli adalah sebuah Web pemesanan hotel, yang dibuat menggunakan ReactJS dan Bootstrapp untuk tampilan User nya. Sedangkan untuk tampilan admin/server dibuat menggunakan NodeJS dan ExpressJS
+`Backend/Server repo` : https://github.com/dyhancrspo/backend_NginepAja`
 
 ## First of all, you need to Clone this repo first :p
 
